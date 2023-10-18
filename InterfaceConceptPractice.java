@@ -55,7 +55,19 @@ class Mftah extends Food{
 
 public class InterfaceConceptPractice{
     public static void main(String[] args) {
+        
+        Printable [] ptr = {
+            new PlayStaion(),
+            new PlayStaionFive(),
+            new PlaystaionFour(),
+            new Food(),
+            new Brusted(),
+            new Mftah()
+        };
 
+        for(Printable p : ptr){
+            p.print();
+        }
     }   
 
 }
