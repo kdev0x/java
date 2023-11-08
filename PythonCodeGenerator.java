@@ -12,7 +12,9 @@ public class PythonCodeGenerator{
             pythonCode += "if color not in colors:\n";
             pythonCode += "\tprint(color + \" is not exist in colors list\")\n";
             pythonCode += "else:\n";
-            pythonCode += "\tprint(color + \" does exist in colors list\")";
+            pythonCode += "\tprint(color + \" does exist in colors list\")\n";
+            pythonCode += "print(colors)";
+
             byte[] pythonBytes = pythonCode.getBytes();
 
             pyFile.write(pythonBytes);
